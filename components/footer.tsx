@@ -189,7 +189,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-[#0a4936]" />
+                <Mail className="w-5 h-5 text-[#0a4936]" />
                 <a
                   href="mailto:siddharthavanasthalipanauti@gmail.com"
                   className="text-sm hover:underline"
