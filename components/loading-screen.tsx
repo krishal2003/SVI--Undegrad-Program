@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import { motion, AnimatePresence } from "framer-motion"
-import { useEffect, useState } from "react"
-import { Plane } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
+import { Plane } from "lucide-react";
 
 export default function LoadingScreen() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 2500)
-    return () => clearTimeout(timer)
-  }, [])
+      setIsLoading(false);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <AnimatePresence>
@@ -45,7 +45,7 @@ export default function LoadingScreen() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Aviation Management
+              Bachelor of Aviation Management
             </motion.h1>
 
             <motion.p
@@ -54,7 +54,7 @@ export default function LoadingScreen() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
             >
-              Kathmandu University
+              SVI{" "}
             </motion.p>
 
             <motion.div
@@ -83,5 +83,5 @@ export default function LoadingScreen() {
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }
