@@ -1,265 +1,257 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { BookOpen, Clock, Award, ArrowLeft } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { BookOpen, Clock, Award, ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function Semester2Page() {
   const courses = [
     {
       code: "AM-201",
-      name: "Accounting and Management Decisions",
+      name: "Microeconomics",
       credits: 3,
       description:
-        "Comprehensive study of accounting principles and their application in management decision-making processes within aviation organizations.",
+        "Study of individual economic units such as consumers and firms. Covers demand and supply, elasticity, market structures, and resource allocation.",
       objectives: [
-        "Understand fundamental accounting principles and concepts",
-        "Learn to prepare and analyze financial statements",
-        "Apply accounting information for management decisions",
-        "Understand cost accounting and budgeting processes",
+        "Understand the fundamentals of microeconomic theory",
+        "Analyze consumer and producer behavior",
+        "Study market structures and pricing strategies",
+        "Explore resource allocation and efficiency",
       ],
       topics: [
-        "Financial Accounting Fundamentals",
-        "Management Accounting Systems",
-        "Cost Analysis and Control",
-        "Budgeting and Forecasting",
-        "Financial Statement Analysis",
+        "Demand and Supply Analysis",
+        "Elasticity and Applications",
+        "Consumer Choice and Utility",
+        "Production and Costs",
+        "Market Structures: Perfect and Imperfect Competition",
       ],
     },
     {
       code: "AM-202",
-      name: "Microeconomics",
+      name: "Organizational Behavior",
       credits: 3,
       description:
-        "Study of individual economic units and market mechanisms, with specific focus on aviation industry economics and market structures.",
+        "Examination of individual and group behavior within organizations. Focuses on motivation, leadership, team dynamics, and organizational culture.",
       objectives: [
-        "Understand microeconomic principles and theories",
-        "Analyze market structures and competition",
-        "Study consumer and producer behavior",
-        "Apply economic concepts to aviation industry",
+        "Understand human behavior in organizational settings",
+        "Study motivation and leadership theories",
+        "Analyze group dynamics and teamwork",
+        "Explore organizational culture and change",
       ],
       topics: [
-        "Supply and Demand Analysis",
-        "Market Structures and Competition",
-        "Consumer Choice Theory",
-        "Production and Cost Theory",
-        "Aviation Market Economics",
+        "Foundations of Organizational Behavior",
+        "Individual Behavior and Learning",
+        "Motivation and Job Satisfaction",
+        "Leadership and Power",
+        "Organizational Culture and Change",
       ],
     },
     {
       code: "AM-203",
-      name: "Human Resources Management",
+      name: "Business Accounting",
       credits: 3,
       description:
-        "Comprehensive study of human resource management practices in aviation organizations, including recruitment, training, and performance management.",
+        "Introduction to accounting principles and practices used in business. Covers financial statements, journal entries, and financial analysis.",
       objectives: [
-        "Understand HRM functions and processes",
-        "Learn recruitment and selection techniques",
-        "Study training and development programs",
-        "Understand performance management systems",
+        "Learn basic accounting principles",
+        "Understand preparation of financial statements",
+        "Apply accounting techniques to business scenarios",
+        "Interpret and analyze financial reports",
       ],
       topics: [
-        "HRM Planning and Job Analysis",
-        "Recruitment and Selection",
-        "Training and Development",
-        "Performance Management",
-        "Aviation Industry HR Challenges",
+        "Principles of Accounting",
+        "Journal Entries and Ledgers",
+        "Trial Balance and Adjustments",
+        "Preparation of Financial Statements",
+        "Financial Statement Analysis",
       ],
     },
     {
       code: "AM-204",
-      name: "Airport Management",
+      name: "Aviation Geography",
       credits: 3,
       description:
-        "Detailed study of airport operations, management systems, and the role of airports in the aviation ecosystem.",
+        "Study of global geography relevant to aviation. Covers major airports, international routes, time zones, and air navigation principles.",
       objectives: [
-        "Understand airport organizational structure",
-        "Learn airport operations management",
-        "Study airport planning and development",
-        "Understand airport revenue generation",
+        "Gain geographical knowledge for aviation operations",
+        "Identify global air routes and airport hubs",
+        "Understand the role of time zones and navigation",
+        "Apply geography in airline planning",
       ],
       topics: [
-        "Airport Organization and Structure",
-        "Terminal Operations Management",
-        "Airfield Operations",
-        "Airport Planning and Development",
-        "Airport Revenue Management",
+        "World Geography and Continents",
+        "International Airports and Routes",
+        "Air Navigation and Coordinates",
+        "Time Zones and UTC",
+        "Geographical Factors Affecting Aviation",
       ],
     },
     {
       code: "AM-205",
-      name: "Aviation Safety and Security",
+      name: "Statistics for Business",
       credits: 3,
       description:
-        "Comprehensive study of safety and security management systems in aviation, including regulatory frameworks and risk management.",
+        "Introduction to statistical methods used in business. Topics include data analysis, probability, hypothesis testing, and regression.",
       objectives: [
-        "Understand aviation safety management systems",
-        "Learn security protocols and procedures",
-        "Study risk assessment and management",
-        "Understand regulatory compliance requirements",
+        "Learn descriptive and inferential statistics",
+        "Analyze business data effectively",
+        "Understand hypothesis testing and confidence intervals",
+        "Apply regression and correlation techniques",
       ],
       topics: [
-        "Safety Management Systems (SMS)",
-        "Aviation Security Protocols",
-        "Risk Assessment and Management",
-        "Emergency Response Planning",
-        "Regulatory Compliance",
+        "Data Collection and Presentation",
+        "Measures of Central Tendency and Dispersion",
+        "Probability Concepts",
+        "Hypothesis Testing",
+        "Correlation and Regression Analysis",
       ],
     },
-  ]
+  ];
 
-  const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0)
+  const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Navbar />
+    <>
+      <div className="min-h-screen bg-gradient-to-b from-white to-[#e8f4ec]">
+        <Navbar />
 
-      {/* Header */}
-      <div className="bg-gradient-to-r from-[#0a4936] to-green-600 text-white py-20 mt-16">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold mb-6">Semester II</h1>
-            <p className="text-xl opacity-90 mb-6">Core management and aviation fundamentals</p>
-            <div className="flex items-center justify-center space-x-2 text-green-200">
-              <Link href="/" className="hover:text-white transition-colors">
+        <header className="bg-[#3e8558] text-white py-20 mt-16">
+          <div className="container mx-auto px-6 text-center">
+            <h1 className="text-5xl font-extrabold mb-4">Semester II</h1>
+            <p className="text-lg opacity-90 mb-6">
+              Continuation of the aviation foundation with a focus on behavioral
+              science, geography, economics, and statistics.
+            </p>
+            <div className="flex justify-center space-x-2 text-green-200 text-sm">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span>/</span>
-              <Link href="/curriculum" className="hover:text-white transition-colors">
+              <Link href="/curriculum" className="hover:text-white">
                 Curriculum
               </Link>
               <span>/</span>
-              <span className="text-white">Semester 2</span>
+              <span className="text-white font-medium">Semester 2</span>
             </div>
           </div>
-        </div>
-      </div>
+        </header>
 
-      <div className="container mx-auto px-6 py-16">
-        {/* Back Button */}
-        <div className="mb-8">
-          <Link href="/curriculum">
-            <Button variant="outline" className="flex items-center space-x-2 bg-transparent">
-              <ArrowLeft className="w-4 h-4" />
-              <span>Back to Curriculum</span>
-            </Button>
-          </Link>
-        </div>
-
-        {/* Semester Overview */}
-        <section className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Semester Overview</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              The second semester builds upon foundation knowledge with core management subjects, introduces
-              microeconomics, and provides specialized aviation courses in airport management and safety.
-            </p>
+        <main className="container mx-auto px-6 py-16">
+          <div className="mb-10">
+            <Link href="/curriculum">
+              <Button
+                variant="outline"
+                className="flex items-center gap-2 bg-white shadow-md"
+              >
+                <ArrowLeft className="w-4 h-4" /> Back to Curriculum
+              </Button>
+            </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <Card className="text-center p-6 bg-gradient-to-br from-[#0a4936] to-green-600 text-white shadow-xl">
-              <CardContent className="pt-6">
-                <BookOpen className="w-12 h-12 mx-auto mb-4" />
-                <div className="text-3xl font-bold mb-2">{courses.length}</div>
-                <div className="text-sm opacity-90">Total Courses</div>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6 bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl">
-              <CardContent className="pt-6">
-                <Award className="w-12 h-12 mx-auto mb-4" />
-                <div className="text-3xl font-bold mb-2">{totalCredits}</div>
-                <div className="text-sm opacity-90">Total Credits</div>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6 bg-gradient-to-br from-green-600 to-green-700 text-white shadow-xl">
-              <CardContent className="pt-6">
-                <Clock className="w-12 h-12 mx-auto mb-4" />
-                <div className="text-3xl font-bold mb-2">16</div>
-                <div className="text-sm opacity-90">Weeks Duration</div>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6 bg-gradient-to-br from-purple-600 to-purple-700 text-white shadow-xl">
-              <CardContent className="pt-6">
-                <BookOpen className="w-12 h-12 mx-auto mb-4" />
-                <div className="text-3xl font-bold mb-2">Core</div>
-                <div className="text-sm opacity-90">Course Type</div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+          <section className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+            <div className="rounded-xl bg-white border border-gray-200 shadow hover:shadow-md transition p-6 text-center">
+              <BookOpen className="w-8 h-8 text-[#3e8558] mx-auto mb-3" />
+              <p className="text-2xl font-bold text-gray-900">
+                {courses.length}
+              </p>
+              <p className="text-sm text-gray-500">Total Courses</p>
+            </div>
+            <div className="rounded-xl bg-white border border-gray-200 shadow hover:shadow-md transition p-6 text-center">
+              <Award className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+              <p className="text-2xl font-bold text-gray-900">{totalCredits}</p>
+              <p className="text-sm text-gray-500">Total Credits</p>
+            </div>
+            <div className="rounded-xl bg-white border border-gray-200 shadow hover:shadow-md transition p-6 text-center">
+              <Clock className="w-8 h-8 text-purple-600 mx-auto mb-3" />
+              <p className="text-2xl font-bold text-gray-900">16</p>
+              <p className="text-sm text-gray-500">Weeks Duration</p>
+            </div>
+            <div className="rounded-xl bg-white border border-gray-200 shadow hover:shadow-md transition p-6 text-center">
+              <BookOpen className="w-8 h-8 text-[#3e8558] mx-auto mb-3" />
+              <p className="text-2xl font-bold text-gray-900">Core</p>
+              <p className="text-sm text-gray-500">Course Type</p>
+            </div>
+          </section>
 
-        {/* Course Details */}
-        <section className="mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Course Details</h2>
-          <div className="space-y-8">
-            {courses.map((course, index) => (
-              <Card key={index} className="shadow-xl border-0 hover:shadow-2xl transition-all duration-300">
-                <CardHeader className="bg-gradient-to-r from-[#0a4936] to-green-600 text-white">
-                  <div className="flex justify-between items-center">
-                    <CardTitle className="text-2xl">
-                      {course.code}: {course.name}
-                    </CardTitle>
-                    <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-semibold">
-                      {course.credits} Credits
-                    </span>
-                  </div>
-                </CardHeader>
-                <CardContent className="p-8">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <section className="mb-20">
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+              Course Details
+            </h2>
+            <div className="space-y-10">
+              {courses.map((course, idx) => (
+                <Card
+                  key={idx}
+                  className="border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300"
+                >
+                  <CardHeader className="bg-[#3e8558] text-white">
+                    <div className="flex justify-between items-center">
+                      <CardTitle className="text-2xl">
+                        {course.code}: {course.name}
+                      </CardTitle>
+                      <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-medium">
+                        {course.credits} Credits
+                      </span>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div>
-                      <h4 className="text-lg font-bold text-gray-900 mb-4">Course Description</h4>
-                      <p className="text-gray-600 leading-relaxed mb-6">{course.description}</p>
-
-                      <h4 className="text-lg font-bold text-gray-900 mb-4">Learning Objectives</h4>
-                      <ul className="space-y-2">
-                        {course.objectives.map((objective, objIndex) => (
-                          <li key={objIndex} className="flex items-start text-gray-700">
-                            <div className="w-2 h-2 bg-[#0a4936] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span className="text-sm leading-relaxed">{objective}</span>
-                          </li>
+                      <h4 className="text-lg font-semibold mb-3">
+                        Course Description
+                      </h4>
+                      <p className="text-gray-700 mb-6 leading-relaxed">
+                        {course.description}
+                      </p>
+                      <h4 className="text-lg font-semibold mb-3">
+                        Learning Objectives
+                      </h4>
+                      <ul className="list-disc list-inside space-y-1 text-gray-700">
+                        {course.objectives.map((obj, i) => (
+                          <li key={i}>{obj}</li>
                         ))}
                       </ul>
                     </div>
-
                     <div>
-                      <h4 className="text-lg font-bold text-gray-900 mb-4">Course Topics</h4>
-                      <ul className="space-y-2">
-                        {course.topics.map((topic, topicIndex) => (
-                          <li key={topicIndex} className="flex items-start text-gray-700">
-                            <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span className="text-sm leading-relaxed">{topic}</span>
-                          </li>
+                      <h4 className="text-lg font-semibold mb-3">
+                        Course Topics
+                      </h4>
+                      <ul className="list-disc list-inside space-y-1 text-gray-700">
+                        {course.topics.map((topic, i) => (
+                          <li key={i}>{topic}</li>
                         ))}
                       </ul>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
 
-        {/* Navigation */}
-        <section>
-          <div className="flex justify-between items-center">
-            <div>
-              <p className="text-gray-600">Previous Semester</p>
-              <Link href="/curriculum/semester-1" className="text-[#0a4936] font-semibold hover:underline">
-                ← Semester I
-              </Link>
+          <section>
+            <div className="flex justify-between">
+              <div>
+                <p className="text-sm text-gray-500">Previous Semester</p>
+                <Link
+                  href="/curriculum/semester-1"
+                  className="text-[#3e8558] font-semibold hover:underline"
+                >
+                  ← Semester I
+                </Link>
+              </div>
+              <div className="text-right">
+                <p className="text-sm text-gray-500">Next Semester</p>
+                <Link
+                  href="/curriculum/semester-3"
+                  className="text-emerald-700 font-semibold hover:underline"
+                >
+                  Semester III →
+                </Link>
+              </div>
             </div>
-            <div className="text-right">
-              <p className="text-gray-600">Next Semester</p>
-              <Link href="/curriculum/semester-3" className="text-[#0a4936] font-semibold hover:underline">
-                Semester III →
-              </Link>
-            </div>
-          </div>
-        </section>
+          </section>
+        </main>
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
-  )
+    </>
+  );
 }

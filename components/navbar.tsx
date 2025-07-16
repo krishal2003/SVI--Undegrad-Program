@@ -34,13 +34,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center space-x-4">
             <img src="svi.png" alt="" width="50px" />
-            <img src="annapurna.png" alt="" width="50px" />
+            <img src="annapurna.png" alt="" width="80px" />
             <img src="ku.png" alt="" width="50px" />
           </Link>
 
           <div className="flex items-center space-x-6">
             <Link href="/apply">
-              <Button className="hidden md:inline-flex bg-[#0a4936] hover:bg-[#0a4936]/90 text-white">
+              <Button className="hidden md:inline-flex bg-[#52ae74] hover:bg-[#70E99C]/90 text-white">
                 APPLY NOW
               </Button>
             </Link>
@@ -57,7 +57,7 @@ export default function Navbar() {
 
       {/* Full Screen Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-[#0a4936] text-white">
+        <div className="fixed top-0 left-0 right-0 h-1/2 z-50 bg-[#3e8558] text-white shadow-md overflow-y-auto">
           <div className="absolute top-6 right-6">
             <button
               onClick={toggleMenu}
@@ -67,7 +67,7 @@ export default function Navbar() {
             </button>
           </div>
 
-          <div className="container mx-auto px-6 py-16">
+          <div className="container mx-auto px-6 py-10 ">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl">
               <div>
                 <h2 className="text-xl font-bold mb-6 border-b border-green-400 pb-2">
@@ -165,7 +165,7 @@ export default function Navbar() {
                     <h3 className="font-semibold mb-3 text-green-300">
                       Semesters
                     </h3>
-                    <ul className="space-y-2 text-sm text-gray-200">
+                    <ul className="grid grid-cols-2 gap-x-8 gap-y-2 text-sm text-gray-200">
                       {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
                         <li key={sem}>
                           <Link

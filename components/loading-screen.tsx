@@ -18,7 +18,7 @@ export default function LoadingScreen() {
     <AnimatePresence>
       {isLoading && (
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-[#0a4936] via-green-600 to-green-700"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#ffffff]"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
@@ -36,11 +36,11 @@ export default function LoadingScreen() {
                 ease: "easeInOut",
               }}
             >
-              <Plane className="w-12 h-12 text-[#0a4936]" />
+              <img src="svi.png" alt="" />
             </motion.div>
 
             <motion.h1
-              className="text-4xl font-bold text-white mb-2"
+              className="text-4xl font-bold text-black mb-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
@@ -49,7 +49,7 @@ export default function LoadingScreen() {
             </motion.h1>
 
             <motion.p
-              className="text-xl text-green-100 mb-8"
+              className="text-xl text-black mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}

@@ -125,7 +125,7 @@ export default function HomePage() {
     "/placeholder.svg?height=300&width=400",
     "/placeholder.svg?height=300&width=400",
     "/placeholder.svg?height=300&width=400",
-    "/placeholder.svg?height=300&width=400",
+    "/edu.HEIC?height=300&width=400",
     "/placeholder.svg?height=300&width=400",
     "/placeholder.svg?height=300&width=400",
   ];
@@ -145,11 +145,31 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
 
         {/* Hero Content */}
-        <div className="relative z-10  text-center text-white px-4 max-w-5xl mx-auto">
+        <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
+          {/* University Logos */}
+          <div className="flex justify-center items-end gap-6 flex-wrap mb-5 ">
+            <img
+              src="/svi.png"
+              alt="University 1"
+              className="h-12 md:h-16 object-contain"
+            />
+            <img
+              src="/annapurna.png"
+              alt="University 2"
+              className="h-12 md:h-16 object-contain"
+            />
+            <img
+              src="/ku.png"
+              alt="University 3"
+              className="h-12 md:h-16 object-contain"
+            />
+          </div>
+
+          {/* Animated Heading */}
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
               PREPARING <br />
-              <span className="text-green-400 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#52ae74] to-[#6fcf97] bg-clip-text text-transparent">
                 TOMORROW'S AVIATION{" "}
               </span>
               <br />
@@ -174,92 +194,96 @@ export default function HomePage() {
           </button>
         </div>
       </section>
-      {/* Program Overview with Visual Elements */}
-      <section className="py-24 bg-white relative overflow-hidden" id="main">
+      {/* Program Overview with Visual Enhancements */}
+      <section className="py-28 bg-white relative overflow-hidden" id="main">
         <div className="container mx-auto px-6 relative">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-24">
+              {/* Left: Text Content */}
               <div>
-                <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fade-in">
                   <BookOpen className="w-4 h-4" />
                   <span>Our Program</span>
                 </div>
-                <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
-                  Bachelor of Aviation Management
+                <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight leading-tight">
+                  Bachelor of{" "}
+                  <span className="text-[#3e8558]">Aviation Management</span>
                 </h2>
-                <p className="text-xl text-gray-600 leading-relaxed mb-8">
+                <p className="text-xl text-gray-600 leading-relaxed mb-10">
                   A comprehensive four-year program preparing students for
                   leadership roles in the aviation industry with cutting-edge
-                  curriculum and industry partnerships
+                  curriculum and strong industry partnerships.
                 </p>
                 <Link href="/curriculum">
-                  <Button className="bg-[#0a4936] hover:bg-[#0a4936]/90 text-white px-8 py-4 text-lg rounded-full">
+                  <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:scale-105 transition-transform duration-200 text-white px-8 py-4 text-lg rounded-full shadow-lg">
                     View Curriculum
                   </Button>
                 </Link>
               </div>
+
+              {/* Right: Visual Images */}
               <div className="relative">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-6">
                   <Image
-                    src="/bam1.jpg?height=300&width=250"
-                    alt="Aviation Students"
-                    width={250}
-                    height={300}
-                    className="rounded-2xl shadow-xl"
+                    src="/bam1.jpg"
+                    alt="Female Pilot Student"
+                    width={260}
+                    height={340}
+                    className="rounded-3xl shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out"
                   />
                   <Image
-                    src="/bam2.jpg?height=200&width=250"
-                    alt="Aviation Lab"
-                    width={250}
-                    height={200}
-                    className="rounded-2xl shadow-xl mt-12"
+                    src="/bam2.jpg"
+                    alt="Aviation Cockpit Training"
+                    width={260}
+                    height={220}
+                    className="rounded-3xl shadow-2xl mt-14 transform hover:scale-105 transition duration-300 ease-in-out"
                   />
                 </div>
-                <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-green-400 to-blue-500 rounded-full opacity-20"></div>
-                <div className="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full opacity-20"></div>
+
+                {/* Gradient Circles */}
+                <div className="absolute -bottom-10 -left-10 w-36 h-36 bg-gradient-to-br from-green-300 to-blue-400 rounded-full opacity-20 blur-xl animate-pulse"></div>
+                <div className="absolute -top-10 -right-10 w-28 h-28 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-20 blur-xl animate-pulse"></div>
               </div>
             </div>
 
-            {/* Program Objectives with Icons */}
-            <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-3xl p-12 shadow-xl">
-              <h3 className="text-4xl font-bold mb-10 text-center text-gray-900">
+            {/* Program Objectives */}
+            <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-3xl p-14 shadow-2xl">
+              <h3 className="text-4xl font-bold mb-12 text-center text-gray-900">
                 Program Objectives
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {[
                   {
-                    icon: <Target className="w-10 h-10 text-blue-600" />,
-                    text: "Develop comprehensive understanding of the Nepali aviation industry",
+                    icon: <Target className="w-10 h-10 text-[#3e8558]" />,
+                    text: "Understand the Nepali aviation industry deeply",
                   },
                   {
-                    icon: <Zap className="w-10 h-10 text-blue-600" />,
-                    text: "Equip students with essential management skills for aviation operations",
+                    icon: <Zap className="w-10 h-10 text-[#3e8558]" />,
+                    text: "Build core management skills for aviation",
                   },
                   {
-                    icon: <Wrench className="w-10 h-10 text-blue-600" />,
-                    text: "Provide practical training to prepare for real-world challenges",
+                    icon: <Wrench className="w-10 h-10 text-[#3e8558]" />,
+                    text: "Train for real-world aviation challenges",
                   },
                   {
-                    icon: <Brain className="w-10 h-10 text-blue-600" />,
-                    text: "Foster critical thinking, problem-solving, and communication skills",
+                    icon: <Brain className="w-10 h-10 text-[#3e8558]" />,
+                    text: "Sharpen thinking and problem-solving",
                   },
                   {
-                    icon: <Rocket className="w-10 h-10 text-blue-600" />,
-                    text: "Promote research, innovation, and entrepreneurship in aviation",
+                    icon: <Rocket className="w-10 h-10 text-[#3e8558]" />,
+                    text: "Encourage innovation and research in aviation",
                   },
                   {
-                    icon: <Star className="w-10 h-10 text-blue-600" />,
-                    text: "Produce graduates who are ethically responsible and socially conscious",
+                    icon: <Star className="w-10 h-10 text-[#3e8558]" />,
+                    text: "Develop ethical and socially aware graduates",
                   },
                 ].map((objective, index) => (
                   <div
                     key={index}
-                    className="flex flex-row items-center text-center space-y-4 space-x-3"
+                    className="flex items-start space-x-4 hover:scale-[1.02] transition-transform duration-200"
                   >
-                    <div>{objective.icon}</div>
-                    <p className="text-gray-700 leading-relaxed text-lg max-w-md">
-                      {objective.text}
-                    </p>
+                    <div className="flex-shrink-0">{objective.icon}</div>
+                    <p className="text-gray-700 text-lg">{objective.text}</p>
                   </div>
                 ))}
               </div>
@@ -267,6 +291,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       {/* Why Choose Us Section with Images */}
       <section
         id="why-choose-us"
@@ -295,7 +320,7 @@ export default function HomePage() {
                 description:
                   "High demand for aviation professionals in Nepal's expanding sector",
                 image: "/industry.webp?height=200&width=300",
-                color: "from-[#0a4936] to-green-600",
+                // color: "from-[#0a4936] to-green-600",
               },
               {
                 icon: Award,
@@ -303,7 +328,7 @@ export default function HomePage() {
                 description:
                   "Curriculum designed to meet international aviation standards",
                 image: "/icao.png?height=200&width=300",
-                color: "from-blue-600 to-blue-700",
+                // color: "from-blue-600 to-blue-700",
               },
               {
                 icon: BookOpen,
@@ -311,7 +336,7 @@ export default function HomePage() {
                 description:
                   "Hands-on experience through internships and industry partnerships",
                 image: "/training.jpg?height=200&width=300",
-                color: "from-green-600 to-green-700",
+                // color: "from-green-600 to-green-700",
               },
               {
                 icon: Users,
@@ -319,7 +344,7 @@ export default function HomePage() {
                 description:
                   "Multiple career paths in airports, airlines, and regulatory bodies",
                 image: "/pilot.webp?height=200&width=300",
-                color: "from-purple-600 to-purple-700",
+                // color: "from-purple-600 to-purple-700",
               },
             ].map((item, index) => (
               <Card
@@ -334,7 +359,7 @@ export default function HomePage() {
                     className="object-cover"
                   />
                   <div
-                    className={`absolute inset-0 bg-gradient-to-t ${item.color} opacity-80`}
+                    className={`absolute inset-0 bg-gradient-to-t  opacity-20`}
                   ></div>
                   <div className="absolute inset-0 flex items-center justify-center"></div>
                 </div>
@@ -466,7 +491,7 @@ export default function HomePage() {
               <span>Campus Life</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
-              Experience Our Campus
+              Our Gallery
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
               Modern facilities, vibrant student life, and industry-standard
@@ -514,12 +539,9 @@ export default function HomePage() {
               <span>Success Stories</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
-              Alumni Achievements
+              Testimonials{" "}
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              Our graduates are leading the aviation industry across Nepal and
-              beyond
-            </p>
+            <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto"></p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -551,7 +573,7 @@ export default function HomePage() {
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star
                         key={i}
-                        className="w-5 h-5 text-yellow-400 fill-current"
+                        className="w-5 h-5 text-[#3e8558] fill-current"
                       />
                     ))}
                   </div>
@@ -620,49 +642,49 @@ export default function HomePage() {
       </section>
 
       {/* Enhanced FAQ Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      <section className="py-28 bg-gradient-to-br from-white via-gray-50 to-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-20">
-              <div className="inline-flex items-center space-x-2 bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <BookOpen className="w-4 h-4" />
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center space-x-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-5 animate-fade-in">
+                <BookOpen className="w-5 h-5" />
                 <span>FAQ</span>
               </div>
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
                 Frequently Asked Questions
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Get answers to common questions about our aviation management
-                program
+                program.
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className="border border-gray-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white"
+                  className="border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 bg-white"
                 >
                   <button
                     onClick={() => toggleFaq(index)}
-                    className="w-full px-10 py-8 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                    className="w-full px-6 py-6 text-left flex items-center justify-between transition-colors duration-300 hover:bg-gray-100"
                   >
-                    <span className="font-bold text-gray-900 text-xl pr-4">
+                    <span className="font-semibold text-gray-800 text-lg">
                       {faq.question}
                     </span>
                     <ChevronDown
-                      className={`w-8 h-8 text-[#0a4936] transition-transform duration-300 flex-shrink-0 ${
+                      className={`w-6 h-6 text-green-700 transition-transform duration-300 ${
                         openFaq === index ? "rotate-180" : ""
                       }`}
                     />
                   </button>
-                  {openFaq === index && (
-                    <div className="px-10 pb-8 bg-gray-50">
-                      <p className="text-gray-600 leading-relaxed text-lg">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  )}
+                  <div
+                    className={`px-6 pb-4 text-gray-600 text-base transition-all duration-300 ease-in-out ${
+                      openFaq === index ? "block" : "hidden"
+                    }`}
+                  >
+                    {faq.answer}
+                  </div>
                 </div>
               ))}
             </div>
@@ -671,7 +693,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-[#0a4936] to-green-600 text-white">
+      <section className="py-24 bg-gradient-to-r from-[#52ae74] to-green-600 text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 tracking-tight">
             Ready to Take Flight?
@@ -685,7 +707,7 @@ export default function HomePage() {
             <Link href="/apply">
               <Button
                 size="lg"
-                className="bg-white text-[#0a4936] hover:bg-gray-100 px-12 py-6 text-xl font-semibold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
+                className="bg-white text-[#52ae74] hover:bg-gray-100 px-12 py-6 text-xl font-semibold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
               >
                 Apply Now
               </Button>
@@ -694,7 +716,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-[#0a4936] px-12 py-6 text-xl font-semibold rounded-full bg-transparent backdrop-blur-sm transition-all duration-300"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#52ae74] px-12 py-6 text-xl font-semibold rounded-full bg-transparent backdrop-blur-sm transition-all duration-300"
               >
                 Contact Us
               </Button>
