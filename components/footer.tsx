@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, CalendarClock } from "lucide-react";
 import Link from "next/link";
 
 const FacebookIcon = () => (
@@ -132,34 +132,10 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li>
                 <Link
-                  href="/programs/financial-management"
+                  href="/curriculum"
                   className="hover:text-white transition-colors"
                 >
-                  Financial Management
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/programs/operations-management"
-                  className="hover:text-white transition-colors"
-                >
-                  Operations Management
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/programs/sales-marketing"
-                  className="hover:text-white transition-colors"
-                >
-                  Sales & Marketing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/scholarships"
-                  className="hover:text-white transition-colors"
-                >
-                  Scholarships
+                  Bachelor of Aviation Management
                 </Link>
               </li>
             </ul>
@@ -176,7 +152,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm leading-relaxed hover:underline"
                 >
-                  SVI- Undergrad Program{" "}
+                  SVI - Undergrad Program
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -190,16 +166,17 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[#0a4936]" />
+
                 <a
                   href="mailto:siddharthavanasthalipanauti@gmail.com"
                   className="text-sm hover:underline"
                 >
-                  siddharthavanasthalipanauti@gmail.com
+                  siddhartha@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Clock className="w-5 h-5 text-[#0a4936]" />
-                <span className="text-sm">Sun-Fri: 8:30 AM - 12:00 PM</span>
+                <CalendarClock className="w-5 h-5 text-[#0a4936]" />
+                <span className="text-sm">Sun–Fri: 7:00 AM – 5:00 PM</span>
               </div>
             </div>
           </div>

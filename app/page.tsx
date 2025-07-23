@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useEffect } from "react";
+
 import Image from "next/image";
 import {
   ChevronDown,
@@ -17,6 +19,12 @@ import {
   Wrench,
   Brain,
   Rocket,
+  Plane,
+  Briefcase,
+  Activity,
+  BrainCog,
+  FlaskConical,
+  Scale,
   Star,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -123,23 +131,52 @@ export default function HomePage() {
 
   const galleryImages = [
     "/placeholder.svg?height=300&width=400",
-    "/placeholder.svg?height=300&width=400",
-    "/placeholder.svg?height=300&width=400",
-    "/edu.HEIC?height=300&width=400",
+    "/1.jpg?height=400&width=400",
+    "/2.jpg?height=400&width=400",
+    "/3.jpg?height=300&width=400",
     "/placeholder.svg?height=300&width=400",
     "/placeholder.svg?height=300&width=400",
   ];
 
+  const [showPopover, setShowPopover] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopover(true); // Show popover after 5 seconds
+    }, 5000); // 5000ms = 5 seconds
+
+    return () => clearTimeout(timer); // Cleanup on unmount
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
+      {showPopover && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+          <div className="relative max-w-md w-full">
+            <img
+              src="/pop.png"
+              alt="Admission Open"
+              className="w-full h-auto rounded-lg shadow-2xl"
+            />
+            <button
+              onClick={() => setShowPopover(false)}
+              className="absolute top-2 right-2  text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-700"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       <section className="relative h-screen flex items-center justify-center">
         <Image
-          src="/images/hero-airplane.jpg"
+          // src="/images/hero-airplane.jpg"
+          src="/simrik.jpg"
           alt="Aviation Management Program"
           fill
-          className="object-cover"
+          className="object-cover brightness-75" // reduces brightness by 25%
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
@@ -192,6 +229,12 @@ export default function HomePage() {
               <ArrowDown className="w-5 h-5" />
             </div>
           </button>
+        </div>
+        {/* Explore More Button */}
+        <div className="absolute top-8 left-10 transform -translate-x-1/2 z-10">
+          <Link href="https://www.kusom.edu.np/" target="_blank">
+            <img src="kusom.png" alt="" width="50px" />{" "}
+          </Link>
         </div>
       </section>
       {/* Program Overview with Visual Enhancements */}
@@ -254,33 +297,33 @@ export default function HomePage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {[
                   {
-                    icon: <Target className="w-10 h-10 text-[#3e8558]" />,
+                    icon: <Plane className="w-10 h-10 text-[#3e8558]" />,
                     text: "Understand the Nepali aviation industry deeply",
                   },
                   {
-                    icon: <Zap className="w-10 h-10 text-[#3e8558]" />,
+                    icon: <Briefcase className="w-10 h-10 text-[#3e8558]" />,
                     text: "Build core management skills for aviation",
                   },
                   {
-                    icon: <Wrench className="w-10 h-10 text-[#3e8558]" />,
+                    icon: <Activity className="w-10 h-10 text-[#3e8558]" />,
                     text: "Train for real-world aviation challenges",
                   },
                   {
-                    icon: <Brain className="w-10 h-10 text-[#3e8558]" />,
+                    icon: <BrainCog className="w-10 h-10 text-[#3e8558]" />,
                     text: "Sharpen thinking and problem-solving",
                   },
                   {
-                    icon: <Rocket className="w-10 h-10 text-[#3e8558]" />,
+                    icon: <FlaskConical className="w-10 h-10 text-[#3e8558]" />,
                     text: "Encourage innovation and research in aviation",
                   },
                   {
-                    icon: <Star className="w-10 h-10 text-[#3e8558]" />,
+                    icon: <Scale className="w-10 h-10 text-[#3e8558]" />,
                     text: "Develop ethical and socially aware graduates",
                   },
                 ].map((objective, index) => (
                   <div
                     key={index}
-                    className="flex items-start space-x-4 hover:scale-[1.02] transition-transform duration-200"
+                    className="flex flex-row items-center text-center space-y-4 hover:scale-[1.02] transition-transform duration-200"
                   >
                     <div className="flex-shrink-0">{objective.icon}</div>
                     <p className="text-gray-700 text-lg">{objective.text}</p>
