@@ -78,29 +78,29 @@ export default function HomePage() {
 
   const testimonials = [
     {
-      name: "Rajesh Shrestha",
-      role: "Airport Operations Manager",
-      company: "Tribhuvan International Airport",
+      name: "Sampal Bhandara",
+      role: "Graduate student",
+      company: "ABS International School",
       content:
-        "The Aviation Management program provided me with comprehensive knowledge of airport operations and management principles that I apply daily in my role.",
+        " I found Siddhartha Vanasthali Institute through research, appreciated its vocational teaching style and professional faculty, which helped me improve both academic and personal skills.",
       image: "/placeholder.svg?height=80&width=80",
       rating: 5,
     },
     {
-      name: "Priya Gurung",
-      role: "Airline Operations Coordinator",
-      company: "Buddha Air",
+      name: "Afridi Ghesi",
+      role: "Student",
+      company: "Siddhartha Vanasthali Institute",
       content:
-        "The practical approach and industry-focused curriculum prepared me well for the challenges in airline operations management.",
+        "I was inspired by a lifelong passion for aviation, chose Siddhartha for its practical learning beyond textbooks and considers it the best decision for pursuing aviation management.",
       image: "/placeholder.svg?height=80&width=80",
       rating: 5,
     },
     {
       name: "Amit Thapa",
-      role: "Aviation Safety Inspector",
-      company: "Civil Aviation Authority of Nepal",
+      role: "Student",
+      company: "Siddhartha Vanasthali Institute",
       content:
-        "The program's emphasis on safety management and regulatory compliance gave me a strong foundation for my career in aviation safety.",
+        "I express pride in the batch’s achievement of 4 GPA, credits mentors and peers for support, and it reflects my dedication and inspiration in my aviation management journey.",
       image: "/placeholder.svg?height=80&width=80",
       rating: 5,
     },
@@ -595,13 +595,6 @@ export default function HomePage() {
               >
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <Image
-                      src={testimonial.image || "/placeholder.svg"}
-                      alt={testimonial.name}
-                      width={80}
-                      height={80}
-                      className="rounded-full mr-4"
-                    />
                     <div>
                       <div className="font-bold text-xl text-gray-900">
                         {testimonial.name}
