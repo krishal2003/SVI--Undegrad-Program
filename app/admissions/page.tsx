@@ -1,8 +1,15 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, FileText, Calendar, Users, Award, BookOpen } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Navbar from "@/components/navbar"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  CheckCircle,
+  FileText,
+  Calendar,
+  Users,
+  Award,
+  BookOpen,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Navbar from "@/components/navbar";
 
 export default function AdmissionsPage() {
   const admissionRequirements = [
@@ -51,56 +58,76 @@ export default function AdmissionsPage() {
         "Commitment to four-year program completion",
       ],
     },
-  ]
+  ];
 
   const admissionProcess = [
     {
       step: 1,
-      title: "Application Submission",
-      description: "Submit completed application form with required documents",
-      timeline: "March - May",
+      title: "Admission Announcement",
+      description: "Announcement of admission and opening of application",
+      timeline: "Sunday, 29 June 2025",
     },
     {
       step: 2,
-      title: "Entrance Examination",
-      description: "Take KUCAT or equivalent entrance examination",
-      timeline: "June",
+      title: "Deadline of Form Submission",
+      description: "Submit completed application form with required documents",
+      timeline: "Friday, 22 August 2025",
     },
     {
       step: 3,
-      title: "Interview & Assessment",
-      description: "Attend personal interview and group discussion",
-      timeline: "July",
+      title: "Admit Card Distribution",
+      description: "Distribution of admit cards for entrance examination",
+      timeline: "Sunday, 24 August 2025",
     },
     {
       step: 4,
-      title: "Merit List Publication",
-      description: "Check merit list and admission status",
-      timeline: "July",
+      title: "KUMAT Test",
+      description: "Take KUMAT entrance examination",
+      timeline: "Monday, 25 August 2025",
     },
     {
       step: 5,
-      title: "Admission Confirmation",
-      description: "Complete admission formalities and fee payment",
-      timeline: "August",
+      title: "Publish Results of KUMAT",
+      description: "Results of KUMAT test announced",
+      timeline: "Tuesday, 26 August 2025",
     },
     {
       step: 6,
-      title: "Orientation Program",
-      description: "Attend orientation and begin classes",
-      timeline: "September",
+      title: "Second Phase of Admission – Interview",
+      description: "Attend personal interview and group discussion",
+      timeline: "Wednesday, 27 August 2025",
     },
-  ]
+    {
+      step: 7,
+      title: "Final List of Students Selected for Admission",
+      description: "Check merit list and admission status",
+      timeline: "Thursday, 28 August 2025",
+    },
+    {
+      step: 8,
+      title: "Registration for Admission",
+      description: "Complete admission formalities and fee payment",
+      timeline: "Sunday, 31 August – Friday, 12 September 2025",
+    },
+    {
+      step: 9,
+      title: "Classes Begin",
+      description: "Attend orientation and start of classes",
+      timeline: "Wednesday, 17 September 2025",
+    },
+  ];
 
   const importantDates = [
-    { event: "Application Opens", date: "March 1, 2024" },
-    { event: "Application Deadline", date: "May 15, 2024" },
-    { event: "Entrance Examination", date: "June 10, 2024" },
-    { event: "Interview Period", date: "July 1-15, 2024" },
-    { event: "Merit List Publication", date: "July 20, 2024" },
-    { event: "Admission Deadline", date: "August 15, 2024" },
-    { event: "Classes Begin", date: "September 1, 2024" },
-  ]
+    { event: "Application Opens", date: "June 29, 2025" },
+    { event: "Application Deadline", date: "August 22, 2025" },
+    { event: "Admit Card Distribution", date: "August 24, 2025" },
+    { event: "Entrance Examination (KUMAT Test)", date: "August 25, 2025" },
+    { event: "Entrance Exam Result Publication", date: "August 26, 2025" },
+    { event: "Interview Period", date: "August 27, 2025" },
+    { event: "Merit List Publication", date: "August 28, 2025" },
+    { event: "Admission Registration", date: "August 31 – September 12, 2025" },
+    { event: "Classes Begin", date: "September 17, 2025" },
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -111,7 +138,9 @@ export default function AdmissionsPage() {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-6">Admission Requirements</h1>
-            <p className="text-xl opacity-90 mb-6">Your pathway to aviation management excellence</p>
+            <p className="text-xl opacity-90 mb-6">
+              Your pathway to aviation management excellence
+            </p>
             <div className="flex items-center justify-center space-x-2 text-green-200">
               <Link href="/" className="hover:text-white transition-colors">
                 Home
@@ -127,10 +156,13 @@ export default function AdmissionsPage() {
         {/* Overview */}
         <section className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Admission Overview</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              Admission Overview
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              The Bachelor of Aviation Management program follows a competitive admission process designed to select
-              motivated students with the potential to excel in the aviation industry.
+              The Bachelor of Aviation Management program follows a competitive
+              admission process designed to select motivated students with the
+              potential to excel in the aviation industry.
             </p>
           </div>
 
@@ -168,11 +200,18 @@ export default function AdmissionsPage() {
 
         {/* Admission Requirements */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Admission Requirements</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+            Admission Requirements
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {admissionRequirements.map((req, index) => (
-              <Card key={index} className="shadow-xl border-0 hover:shadow-2xl transition-all duration-300">
-                <CardHeader className={`bg-gradient-to-r ${req.color} text-white`}>
+              <Card
+                key={index}
+                className="shadow-xl border-0 hover:shadow-2xl transition-all duration-300"
+              >
+                <CardHeader
+                  className={`bg-gradient-to-r ${req.color} text-white`}
+                >
                   <CardTitle className="text-xl flex items-center">
                     <req.icon className="w-6 h-6 mr-3" />
                     {req.category}
@@ -181,9 +220,14 @@ export default function AdmissionsPage() {
                 <CardContent className="p-6">
                   <ul className="space-y-3">
                     {req.requirements.map((requirement, reqIndex) => (
-                      <li key={reqIndex} className="flex items-start text-gray-700">
+                      <li
+                        key={reqIndex}
+                        className="flex items-start text-gray-700"
+                      >
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
-                        <span className="text-sm leading-relaxed">{requirement}</span>
+                        <span className="text-sm leading-relaxed">
+                          {requirement}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -195,7 +239,9 @@ export default function AdmissionsPage() {
 
         {/* Admission Process */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Admission Process</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+            Admission Process
+          </h2>
           <div className="max-w-4xl mx-auto">
             <div className="space-y-8">
               {admissionProcess.map((process, index) => (
@@ -209,12 +255,16 @@ export default function AdmissionsPage() {
                     <Card className="shadow-lg border-0 hover:shadow-xl transition-all duration-300">
                       <CardContent className="p-6">
                         <div className="flex justify-between items-start mb-3">
-                          <h3 className="text-xl font-bold text-gray-900">{process.title}</h3>
+                          <h3 className="text-xl font-bold text-gray-900">
+                            {process.title}
+                          </h3>
                           <span className="text-sm text-[#0a4936] font-semibold bg-green-100 px-3 py-1 rounded-full">
                             {process.timeline}
                           </span>
                         </div>
-                        <p className="text-gray-600 leading-relaxed">{process.description}</p>
+                        <p className="text-gray-600 leading-relaxed">
+                          {process.description}
+                        </p>
                       </CardContent>
                     </Card>
                   </div>
@@ -226,7 +276,9 @@ export default function AdmissionsPage() {
 
         {/* Important Dates */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Important Dates</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+            Important Dates
+          </h2>
           <div className="max-w-3xl mx-auto">
             <Card className="shadow-xl border-0">
               <CardHeader className="bg-gradient-to-r from-[#0a4936] to-green-600 text-white">
@@ -238,10 +290,17 @@ export default function AdmissionsPage() {
               <CardContent className="p-0">
                 <div className="divide-y divide-gray-200">
                   {importantDates.map((date, index) => (
-                    <div key={index} className="p-6 hover:bg-gray-50 transition-colors">
+                    <div
+                      key={index}
+                      className="p-6 hover:bg-gray-50 transition-colors"
+                    >
                       <div className="flex justify-between items-center">
-                        <span className="font-semibold text-gray-900">{date.event}</span>
-                        <span className="text-[#0a4936] font-bold">{date.date}</span>
+                        <span className="font-semibold text-gray-900">
+                          {date.event}
+                        </span>
+                        <span className="text-[#0a4936] font-bold">
+                          {date.date}
+                        </span>
                       </div>
                     </div>
                   ))}
@@ -254,42 +313,86 @@ export default function AdmissionsPage() {
         {/* Selection Criteria */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl shadow-xl p-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Selection Criteria</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Selection Criteria
+            </h2>
             <div className="prose prose-lg text-gray-700 leading-relaxed max-w-none">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-bold text-[#0a4936] mb-4">Merit-Based Selection</h3>
+                  <h3 className="text-xl font-bold text-[#0a4936] mb-4">
+                    Eligibility Requirements
+                  </h3>
                   <p className="mb-4">
-                    Students are selected based on their academic performance, entrance examination scores, and
-                    performance in personal interviews. The selection process is transparent and merit-based.
+                    Applicants must meet one of the following minimum academic
+                    requirements:
                   </p>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Academic performance (40%)
+                  <ul className="space-y-2 text-gray-700 list-disc list-inside">
+                    <li>
+                      +2 or equivalent with at least 40% aggregate (or CGPA
+                      1.6/4.0) and minimum 'D+' grade in each subject
                     </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Entrance examination (35%)
+                    <li>
+                      GCE A Level: Pass minimum 3 subjects plus 1 AS Level
+                      general paper, meeting the above marks/grades
                     </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Personal interview (25%)
+                    <li>
+                      International Baccalaureate (IB): Pass minimum 6 courses
+                      (3 at Higher Level) with 24 points aggregate
                     </li>
+                    <li>
+                      CTEVT Diploma: Three-year diploma with minimum 40%
+                      aggregate
+                    </li>
+                    <li>CBSE Board: Minimum 40% aggregate marks</li>
                   </ul>
+                  <p className="mt-4 text-sm text-gray-600 italic">
+                    Note: 10% of seats reserved for foreign students.
+                    Provisional admission allowed for applicants awaiting final
+                    results.
+                  </p>
+                  <p className="mt-4 font-semibold">
+                    Passing the KUMAT test is mandatory for all applicants.
+                  </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0a4936] mb-4">Special Considerations</h3>
+                  <h3 className="text-xl font-bold text-[#0a4936] mb-4">
+                    Selection Process
+                  </h3>
                   <p className="mb-4">
-                    Special consideration is given to students from underrepresented regions, those with
-                    aviation-related experience, and students demonstrating exceptional leadership qualities.
+                    Selection is based on a combination of academic credentials,
+                    entrance exam scores, and interview performance.
                   </p>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Regional diversity
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>
+                      Academic performance (40%)
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Aviation experience
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>
+                      Entrance examination (35%)
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Leadership potential
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>
+                      Personal interview (25%)
+                    </li>
+                  </ul>
+                  <p className="mt-4">
+                    Additional consideration is given to candidates with
+                    aviation experience, leadership potential, and from
+                    underrepresented regions.
+                  </p>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>
+                      Regional diversity
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>
+                      Aviation experience
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>
+                      Leadership potential
                     </li>
                   </ul>
                 </div>
@@ -304,8 +407,9 @@ export default function AdmissionsPage() {
             <div className="max-w-4xl mx-auto px-8 text-center">
               <h2 className="text-4xl font-bold mb-8">Ready to Apply?</h2>
               <p className="text-xl mb-8 opacity-90 leading-relaxed">
-                Take the first step towards your aviation management career. Submit your application today and join
-                Nepal's premier aviation management program.
+                Take the first step towards your aviation management career.
+                Submit your application today and join Nepal's premier aviation
+                management program.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link href="/apply">
@@ -331,5 +435,5 @@ export default function AdmissionsPage() {
         </section>
       </div>
     </div>
-  )
+  );
 }
