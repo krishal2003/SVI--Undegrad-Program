@@ -33,9 +33,9 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center space-x-4">
-            <img src="svi.png" alt="" width="50px" />
-            <img src="annapurna.png" alt="" width="80px" />
-            <img src="ku.png" alt="" width="50px" />
+            <img src="/svi.png" alt="" width="50px" />
+            <img src="/annapurna.png" alt="" width="80px" />
+            <img src="/ku.png" alt="" width="50px" />
           </Link>
 
           <div className="flex items-center space-x-6">
