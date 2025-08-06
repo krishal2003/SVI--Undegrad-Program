@@ -36,7 +36,7 @@ export default function LoadingScreen() {
                 ease: "easeInOut",
               }}
             >
-              <img src="svi.png" alt="" />
+              <img src="/svi.png" alt="" />
             </motion.div>
 
             <motion.h1
