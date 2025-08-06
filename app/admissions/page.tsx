@@ -10,6 +10,8 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+
 
 export default function AdmissionsPage() {
   const admissionRequirements = [
@@ -434,6 +436,8 @@ export default function AdmissionsPage() {
           </div>
         </section>
       </div>
+            <Footer />
+
     </div>
   );
 }
