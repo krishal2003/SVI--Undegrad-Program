@@ -623,59 +623,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* News & Events */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="flex justify-between items-center mb-16">
-            <div>
-              <div className="inline-flex items-center space-x-2 bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-                <Calendar className="w-4 h-4" />
-                <span>Latest Updates</span>
-              </div>
-              <h2 className="text-4xl font-bold text-gray-900">
-                News & Events
-              </h2>
-            </div>
-            <Link href="/news">
-              <Button
-                variant="outline"
-                className="border-[#0a4936] text-[#0a4936] hover:bg-[#0a4936] hover:text-white bg-transparent"
-              >
-                View All News
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {newsItems.map((item, index) => (
-              <Card
-                key={index}
-                className="hover:shadow-xl transition-all duration-300 border-0 bg-white overflow-hidden"
-              >
-                <div className="relative h-48">
-                  <Image
-                    src={item.image || "/placeholder.svg"}
-                    alt={item.title}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 left-4 bg-[#0a4936] text-white px-3 py-1 rounded-full text-sm">
-                    {new Date(item.date).toLocaleDateString()}
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-xl text-gray-900 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {item.excerpt}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+  
 
       {/* Enhanced FAQ Section */}
       <section className="py-28 bg-gradient-to-br from-white via-gray-50 to-white">
