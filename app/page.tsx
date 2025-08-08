@@ -195,11 +195,15 @@ export default function HomePage() {
               alt="University 2"
               className="h-12 md:h-16 object-contain"
             />
+                      <Link href="https://www.kusom.edu.np/" target="_blank">
+
             <img
               src="/ku.png"
               alt="University 3"
               className="h-12 md:h-16 object-contain"
             />
+                                  </Link>
+
           </div>
 
           {/* Animated Heading */}
@@ -231,11 +235,11 @@ export default function HomePage() {
           </button>
         </div>
         {/* Explore More Button */}
-        <div className="absolute top-8 left-10 transform -translate-x-1/2 z-10">
+{/*         <div className="absolute top-8 left-10 transform -translate-x-1/2 z-10">
           <Link href="https://www.kusom.edu.np/" target="_blank">
             <img src="kusom.png" alt="" width="50px" />{" "}
           </Link>
-        </div>
+        </div> */}
       </section>
       {/* Program Overview with Visual Enhancements */}
       <section className="py-28 bg-white relative overflow-hidden" id="main">
