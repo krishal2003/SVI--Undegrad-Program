@@ -36,19 +36,19 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Address",
-      details: ["Kathmandu University School of Management", "Balkumari, Lalitpur", "Nepal"],
+      details: ["Siddhartha Vanasthali Institute", "Banepa - 5", "Kavre"],
       color: "from-[#0a4936] to-green-600",
     },
     {
       icon: Phone,
       title: "Phone",
-      details: ["+977-1-5970012", "+977-1-5970013", "Fax: +977-1-5970014"],
+      details: ["+977-9707191358", "+977-9860001697"],
       color: "from-blue-600 to-blue-700",
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@aviation.ku.edu.np", "admissions@aviation.ku.edu.np", "support@aviation.ku.edu.np"],
+      details: ["siddharthavanasthalipanauti@gmail.com"],
       color: "from-green-600 to-green-700",
     },
     {
@@ -238,20 +238,34 @@ export default function ContactPage() {
                 <CardTitle className="text-xl">Our Location</CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-64 rounded-lg flex items-center justify-center">
+                {/* <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-64 rounded-lg flex items-center justify-center">
                   <div className="text-center text-gray-600">
                     <MapPin className="w-16 h-16 mx-auto mb-4 text-[#0a4936]" />
                     <p className="font-semibold text-lg">Interactive Map</p>
                     <p className="text-sm">Kathmandu University</p>
                     <p className="text-sm">Balkumari, Lalitpur</p>
                   </div>
+                </div> */}
+                <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-64 rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.1203276656665!2d85.2979427!3d27.7257474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18ea28354a9f%3A0x40915f1bcc9ba9a9!2sSiddhartha%20Vanasthali%20Institute!5e1!3m2!1sen!2snp!4v1754463282781!5m2!1sen!2snp"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    // allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
+
+
+
               </CardContent>
             </Card>
           </div>
         </div>
 
-        {/* Department Contacts */}
+        {/* Department Contacts
         <section className="mt-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Department Contacts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -274,7 +288,7 @@ export default function ContactPage() {
               </Card>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Visit Us */}
         <section className="mt-16">
