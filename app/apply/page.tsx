@@ -251,12 +251,21 @@ export default function ApplyPage() {
               </CardHeader>
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-600">
+                  {/* <div className="text-center text-gray-600">
                     <MapPin className="w-16 h-16 mx-auto mb-4 text-[#0a4936]" />
                     <p className="font-semibold text-lg">Interactive Map</p>
                     <p className="text-sm">Kathmandu University</p>
                     <p className="text-sm">Balkumari, Lalitpur</p>
-                  </div>
+                  </div> */}
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.1203276656665!2d85.2979427!3d27.7257474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18ea28354a9f%3A0x40915f1bcc9ba9a9!2sSiddhartha%20Vanasthali%20Institute!5e1!3m2!1sen!2snp!4v1754463282781!5m2!1sen!2snp"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    // allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </CardContent>
             </Card>
