@@ -159,10 +159,10 @@ export default function AboutPage() {
                 <div>
                   <div className="prose prose-lg text-gray-700 leading-relaxed">
                     <p className="mb-6 text-xl">
-                    Nepal's aviation sector has seen remarkable growth, contributing significantly to tourism development. As an ICAO contracting member, Nepal is committed to maintaining international standards.
+                    Nepal's aviation sector has seen remarkable growth, contributing significantly to tourism development. As an International Civil Aviation Organization(ICAO) contracting member, Nepal is committed to maintaining international standards.
                     </p>
                     <p className="mb-6 text-lg">
-                      However, there's a critical shortage of qualified aviation management professionals, mainly due to the lack of specialized programs in Nepal. Our graduates often work overseas, creating a skills gap.
+                      We offer Nepal’s first internationally recognized aviation management program, providing global-standard education right here at home. There's no need to go abroad—students gain the skills and credentials needed to thrive in the fast-growing aviation industry. With industry-relevant training and expert faculty, our program bridges the gap between local opportunity and international excellence.
                     </p>
 
                   </div>
