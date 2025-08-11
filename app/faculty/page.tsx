@@ -1,13 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { GraduationCap, Award, Users, BookOpen, Globe, Target } from "lucide-react"
+import { GraduationCap, Award, Users, BookOpen, Globe, Target, Images } from "lucide-react"
 import Link from "next/link"
 import Navbar from "@/components/navbar"
 
 export default function FacultyPage() {
   const facultyRequirements = [
     {
-      position: "Program Director",
-      qualification: "PhD in Aviation Management or related field",
+      position: "Mr. Dipen Manandhar",
+      qualification: "Operation Head",
       experience: "Minimum 10 years in aviation industry and academia",
       responsibilities: [
         "Overall program leadership and administration",
@@ -15,10 +15,11 @@ export default function FacultyPage() {
         "Industry liaison and partnership development",
         "Faculty recruitment and development",
       ],
+       image: "/Dipen.png",
     },
     {
-      position: "Core Faculty Members",
-      qualification: "Master's degree in relevant specialization",
+      position: "Mr. Puspa Ram KC",
+      qualification: "Chairman Inspector General",
       experience: "Minimum 5 years teaching and industry experience",
       responsibilities: [
         "Teaching core aviation management courses",
@@ -26,10 +27,13 @@ export default function FacultyPage() {
         "Research and publication activities",
         "Industry project supervision",
       ],
+      image: "/Puspa.png",
+      
     },
+
     {
-      position: "Industry Experts",
-      qualification: "Extensive aviation industry experience",
+      position: "Mr. Rajan Thapa",
+      qualification: "Academic Head",
       experience: "Senior positions in airlines, airports, or regulatory bodies",
       responsibilities: [
         "Guest lectures and specialized courses",
@@ -37,10 +41,12 @@ export default function FacultyPage() {
         "Industry insights and case studies",
         "Career guidance and networking",
       ],
+      image: "/Rajan.png",
+      
     },
     {
-      position: "Visiting Faculty",
-      qualification: "International aviation management expertise",
+      position: "Mr. Sachan Thapa",
+      qualification: "Director",
       experience: "Global aviation industry and academic experience",
       responsibilities: [
         "International perspective on aviation",
@@ -48,58 +54,72 @@ export default function FacultyPage() {
         "Research collaboration",
         "Student exchange programs",
       ],
+      image: "/Sachan.png",
+    },
+    {
+      position: "Mr. Sanjiv Udash",
+      qualification: "Executive Director",
+      experience: "Global aviation industry and academic experience",
+      responsibilities: [
+        "International perspective on aviation",
+        "Comparative studies and best practices",
+        "Research collaboration",
+        "Student exchange programs",
+      ],
+      image: "/Sanjiv.png",
     },
   ]
 
   const subjectAreas = [
     {
-      area: "Aviation Operations",
+      area: "Aviation Operations & Planning",
       icon: Globe,
       color: "from-[#0a4936] to-green-600",
       topics: [
-        "Airport Management and Operations",
-        "Airline Operations Management",
-        "Air Traffic Control Systems",
-        "Aviation Safety and Security",
-        "Aircraft Maintenance Management",
+        "Airport Planning and Management",
+        "Airline Operations",
+        "Ground Handling and Ramp Services",
+        "Air Traffic Management",
+        "Meteorology Services for Aviation"
       ],
     },
     {
-      area: "Aviation Finance & Economics",
+      area: "Finance, Accounting & Economics",
       icon: Award,
       color: "from-blue-600 to-blue-700",
       topics: [
         "Aviation Economics and Forecasting",
-        "Aircraft Finance and Leasing",
-        "Aviation Insurance",
-        "Revenue Management",
-        "Investment Analysis",
+        "Aircraft Leasing and Financing",
+        "Financial Management in Aviation",
+        "Taxation and Auditing",
+        "Aviation Insurance"
       ],
     },
     {
-      area: "Aviation Law & Regulation",
+      area: "Regulation & Safety",
       icon: BookOpen,
       color: "from-green-600 to-green-700",
       topics: [
-        "International Aviation Law",
-        "ICAO Standards and Practices",
-        "Aviation Regulatory Framework",
-        "Open Sky Policies",
-        "Aviation Environmental Law",
+        "Aviation Law and Policy",
+        "International and ICAO Regulations",
+        "Aircraft Certification & Airworthiness",
+        "Safety and Security Standards",
+        "Drone and Helicopter Operations"
       ],
     },
     {
-      area: "Management & Leadership",
+      area: "Leadership & Communication",
       icon: Users,
       color: "from-purple-600 to-purple-700",
       topics: [
-        "Strategic Management",
-        "Human Resource Management",
-        "Organizational Behavior",
-        "Project Management",
-        "Leadership in Aviation",
+        "Strategic and Project Management",
+        "Human Resource and Organizational Behavior",
+        "Corporate Communication",
+        "Ethics and Social Responsibility",
+        "Leadership in Aviation"
       ],
-    },
+    }
+
   ]
 
   return (
@@ -134,25 +154,25 @@ export default function FacultyPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-            <Card className="text-center p-6 bg-gradient-to-br from-[#0a4936] to-green-600 text-white shadow-xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* <Card className="text-center p-6 bg-gradient-to-br from-[#0a4936] to-green-600 text-white shadow-xl">
               <CardContent className="pt-6">
                 <GraduationCap className="w-12 h-12 mx-auto mb-4" />
                 <div className="text-3xl font-bold mb-2">PhD</div>
                 <div className="text-sm opacity-90">Qualified Faculty</div>
               </CardContent>
-            </Card>
+            </Card> */}
             <Card className="text-center p-6 bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl">
               <CardContent className="pt-6">
                 <Award className="w-12 h-12 mx-auto mb-4" />
-                <div className="text-3xl font-bold mb-2">15+</div>
+                <div className="text-3xl font-bold mb-2">Faculty with</div>
                 <div className="text-sm opacity-90">Years Experience</div>
               </CardContent>
             </Card>
             <Card className="text-center p-6 bg-gradient-to-br from-green-600 to-green-700 text-white shadow-xl">
               <CardContent className="pt-6">
                 <Users className="w-12 h-12 mx-auto mb-4" />
-                <div className="text-3xl font-bold mb-2">20+</div>
+                <div className="text-3xl font-bold mb-2">Multiple</div>
                 <div className="text-sm opacity-90">Industry Experts</div>
               </CardContent>
             </Card>
@@ -168,32 +188,37 @@ export default function FacultyPage() {
 
         {/* Faculty Requirements */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Faculty Requirements & Roles</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Faculty & Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {facultyRequirements.map((faculty, index) => (
               <Card key={index} className="shadow-xl border-0 hover:shadow-2xl transition-all duration-300">
                 <CardHeader className="bg-gradient-to-r from-[#0a4936] to-green-600 text-white">
-                  <CardTitle className="text-xl">{faculty.position}</CardTitle>
+                  <CardTitle className="text-xl text-center">{faculty.position}</CardTitle>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <div className="mb-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">Qualification Required:</h4>
-                    <p className="text-gray-600 text-sm">{faculty.qualification}</p>
+                  <img
+                  src={faculty.image}
+                  className="w-48 h-48 object-cover rounded-full mb-4 mx-auto"
+                />
+                  <div className="mb-4 ">
+                    <h4 className="font-semibold text-gray-900 mb-2 text-center">Position:</h4>
+                    <p className="text-gray-600 text-sm text-center">{faculty.qualification}</p>
                   </div>
                   <div className="mb-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">Experience:</h4>
-                    <p className="text-gray-600 text-sm">{faculty.experience}</p>
+                    {/* <h4 className="font-semibold text-gray-900 mb-2">Experience:</h4>
+                    <p className="text-gray-600 text-sm">{faculty.experience}</p> */}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Key Responsibilities:</h4>
-                    <ul className="space-y-1">
+                    {/* <h4 className="font-semibold text-gray-900 mb-2">Key Responsibilities:</h4> */}
+                    {/* <ul className="space-y-1">
                       {faculty.responsibilities.map((responsibility, respIndex) => (
                         <li key={respIndex} className="flex items-start text-gray-600 text-sm">
                           <div className="w-1.5 h-1.5 bg-[#0a4936] rounded-full mt-2 mr-2 flex-shrink-0"></div>
                           <span>{responsibility}</span>
                         </li>
                       ))}
-                    </ul>
+                    </ul> */}
+                    
                   </div>
                 </CardContent>
               </Card>
@@ -239,7 +264,7 @@ export default function FacultyPage() {
         </section>
 
         {/* Faculty Development */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <div className="bg-white rounded-2xl shadow-xl p-10">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Faculty Development & Support</h2>
             <div className="prose prose-lg text-gray-700 leading-relaxed max-w-none">
@@ -286,7 +311,7 @@ export default function FacultyPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Join Our Faculty */}
         <section>
