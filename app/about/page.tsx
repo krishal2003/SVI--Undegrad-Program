@@ -48,7 +48,7 @@ export default function AboutPage() {
               Shaping Aviation Leaders
             </h1>
             <p className="text-2xl opacity-90 mb-8">
-              Leading aviation management education in Nepal since 1996
+              First aviation management course in Nepal 
             </p>
             <div className="flex items-center justify-center space-x-2 text-green-200">
               <Link href="/" className="hover:text-white transition-colors">
@@ -74,31 +74,26 @@ export default function AboutPage() {
                 Excellence in Aviation Education
               </h2>
               <div className="prose prose-lg text-gray-700 leading-relaxed">
-                <p className="mb-6 text-xl">
-                  The Bachelor of Aviation Management is a comprehensive
-                  four-year program that provides students with the skills and
-                  knowledge to effectively manage aviation operations, airlines,
-                  and airports.
-                </p>
-                <p className="mb-6 text-lg">
-                  Our curriculum covers aviation law, safety, air traffic
-                  control, airport management, aviation finance, marketing, and
-                  human resources management - preparing graduates for
-                  leadership roles in the industry.
-                </p>
+               <p className="mb-6 text-xl">
+                The Bachelor of Aviation Management (BAM) is a four-year, eight-semester undergraduate program designed to provide students with a strong foundation in aviation operations, airline and airport management, aviation safety, economics, law, and marketing.
+              </p>
+              <p className="mb-6 text-lg">
+                Students will gain both theoretical understanding and practical exposure through real-world projects, internships, and certifications, preparing them for leadership roles in the fast-paced global aviation industry.
+              </p>
+
               </div>
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl">
                   <div className="text-3xl font-bold text-[#0a4936] mb-2">
-                    500+
+                    Global Exposure
                   </div>
-                  <div className="text-gray-600">Graduates</div>
+                  <div className="text-gray-600">Internships, Airline Visits & Simulations</div>
                 </div>
                 <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl">
                   <div className="text-3xl font-bold text-blue-600 mb-2">
-                    95%
+                     Electives
                   </div>
-                  <div className="text-gray-600">Employment Rate</div>
+                  <div className="text-gray-600">Finance, Marketing, and Operation</div>
                 </div>
               </div>
             </div>
@@ -164,17 +159,12 @@ export default function AboutPage() {
                 <div>
                   <div className="prose prose-lg text-gray-700 leading-relaxed">
                     <p className="mb-6 text-xl">
-                      Nepal's aviation sector has seen remarkable growth,
-                      contributing significantly to tourism development. As an
-                      ICAO contracting member, Nepal is committed to maintaining
-                      international standards.
+                    Nepal's aviation sector has seen remarkable growth, contributing significantly to tourism development. As an ICAO contracting member, Nepal is committed to maintaining international standards.
                     </p>
                     <p className="mb-6 text-lg">
-                      However, there's a critical shortage of qualified aviation
-                      management professionals, mainly due to the lack of
-                      specialized programs in Nepal. Our graduates often work
-                      overseas, creating a skills gap.
+                      However, there's a critical shortage of qualified aviation management professionals, mainly due to the lack of specialized programs in Nepal. Our graduates often work overseas, creating a skills gap.
                     </p>
+
                   </div>
 
                   <div className="grid grid-cols-2 gap-4 mt-8">
@@ -242,7 +232,7 @@ export default function AboutPage() {
                 icon: Target,
                 title: "Industry Understanding",
                 description:
-                  "Develop comprehensive understanding of the Nepali aviation industry, including its history, structure, technologies, and regulations.",
+                  "Gain a deep understanding of Nepal’s aviation industry, including its history, structure, technologies, and regulations.",
                 color: "from-[#0a4936] to-green-600",
                 image: "/placeholder.svg?height=200&width=300",
               },
@@ -250,7 +240,7 @@ export default function AboutPage() {
                 icon: Users,
                 title: "Management Skills",
                 description:
-                  "Equip students with essential management skills and knowledge to manage aviation operations, airlines, and airports.",
+                  "Develop essential management skills needed to oversee aviation operations, airlines, and airport functions effectively.",
                 color: "from-blue-600 to-blue-700",
                 image: "/placeholder.svg?height=200&width=300",
               },
@@ -258,7 +248,7 @@ export default function AboutPage() {
                 icon: BookOpen,
                 title: "Practical Training",
                 description:
-                  "Provide students with practical training in aviation management to prepare them for real-world challenges.",
+                  "Get hands-on experience through practical training and industry exposure, preparing for real-world aviation challenges.",
                 color: "from-green-600 to-green-700",
                 image: "/placeholder.svg?height=200&width=300",
               },
@@ -266,7 +256,7 @@ export default function AboutPage() {
                 icon: Lightbulb,
                 title: "Critical Thinking",
                 description:
-                  "Foster critical thinking, problem-solving, and communication skills in students to effectively manage aviation activities.",
+                  "Enhance problem-solving, communication, and critical thinking skills to manage complex aviation activities.",
                 color: "from-purple-600 to-purple-700",
                 image: "/placeholder.svg?height=200&width=300",
               },
@@ -274,7 +264,7 @@ export default function AboutPage() {
                 icon: Award,
                 title: "Innovation & Research",
                 description:
-                  "Promote research, innovation, and entrepreneurship in the aviation industry to contribute to its growth and development.",
+                  "Encourage research, innovation, and entrepreneurship to support the growth and development of Nepal’s aviation sector.",
                 color: "from-orange-600 to-orange-700",
                 image: "/placeholder.svg?height=200&width=300",
               },
@@ -282,7 +272,7 @@ export default function AboutPage() {
                 icon: Globe,
                 title: "Social Responsibility",
                 description:
-                  "Produce graduates who are ethically responsible, socially conscious, and contribute positively to society.",
+                  "Prepare graduates to be ethically responsible, socially aware, and active contributors to the community and industry.",
                 color: "from-teal-600 to-teal-700",
                 image: "/placeholder.svg?height=200&width=300",
               },
