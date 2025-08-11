@@ -84,19 +84,13 @@ export default function UniversityPartnerPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">About Kathmandu University</h2>
             <div className="prose prose-lg text-gray-700 leading-relaxed max-w-none">
               <p className="mb-6 text-lg">
-                Kathmandu University (KU) is an autonomous, not-for-profit, self-funding public institution established
-                in 1991. It is the second oldest university in Nepal and has earned recognition as one of the leading
-                universities in the country, known for its innovative approach to education and research.
+                Kathmandu University (KU) is an autonomous, not-for-profit, self-funding public institution established in 1991 through an Act of Parliament. It is widely recognized for maintaining academic excellence in both classical and professional fields and has grown into one of Nepal’s most respected universities.
               </p>
               <p className="mb-6 text-lg">
-                The university follows a semester system and emphasizes practical, hands-on learning combined with
-                theoretical knowledge. KU has consistently maintained high academic standards and has produced graduates
-                who are well-regarded in both national and international markets.
+                The university operates under a semester system and offers more than 200 programs across seven schools, including Management, Engineering, and Medical Sciences. KU places strong emphasis on practical exposure, research competence, and community engagement, making its graduates highly compatible in the global workforce.
               </p>
               <p className="text-lg">
-                With its commitment to excellence in education, research, and community service, Kathmandu University
-                provides the ideal academic environment for the Bachelor of Aviation Management program, ensuring
-                students receive world-class education that meets international standards.
+                With a focus on quality, innovation, and relevance, KU supports a student-friendly learning environment. Its specialized programs, experienced faculty, and industry linkages ensure that students in the Bachelor of Aviation Management program gain the academic foundation and applied skills required to excel in the aviation sector.
               </p>
             </div>
           </div>
@@ -187,15 +181,15 @@ export default function UniversityPartnerPage() {
                   <div className="text-lg opacity-90">Years of Excellence</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                  <div className="text-5xl font-bold mb-3">6</div>
-                  <div className="text-lg opacity-90">Schools</div>
+                  <div className="text-5xl font-bold mb-3">22</div>
+                  <div className="text-lg opacity-90">Affiliations</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                  <div className="text-5xl font-bold mb-3">50+</div>
-                  <div className="text-lg opacity-90">Programs</div>
+                  <div className="text-5xl font-bold mb-3">21k+</div>
+                  <div className="text-lg opacity-90">Current Students</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                  <div className="text-5xl font-bold mb-3">25000+</div>
+                  <div className="text-5xl font-bold mb-3">46k+</div>
                   <div className="text-lg opacity-90">Alumni</div>
                 </div>
               </div>
@@ -213,16 +207,22 @@ export default function UniversityPartnerPage() {
                   <h3 className="text-xl font-bold text-[#0a4936] mb-4">Academic Excellence</h3>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Rigorous academic standards
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Strong academic foundation with rigorous standards
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Innovative teaching methodologies
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Innovative and student-centered teaching methods
+
+
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Research-oriented approach
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Emphasis on research and practical learning
+
+
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>International collaborations
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Active partnerships with international institutions
+
+
                     </li>
                   </ul>
                 </div>
@@ -230,16 +230,24 @@ export default function UniversityPartnerPage() {
                   <h3 className="text-xl font-bold text-[#0a4936] mb-4">Student Support</h3>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Comprehensive student services
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Dedicated academic advising and support services
+
+
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Career guidance and placement
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Career counseling and job placement assistance
+
+
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Scholarship opportunities
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Merit-based and need-based scholarship programs
+
+
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Modern facilities and resources
+                      <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>Access to modern infrastructure and digital resources
+
+
                     </li>
                   </ul>
                 </div>
