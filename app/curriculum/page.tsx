@@ -9,92 +9,108 @@ export default function CurriculumPage() {
     {
       semester: "I",
       courses: [
-        { code: "AM-101", name: "Principles of Management", credits: 3 },
-        {
-          code: "AM-102",
-          name: "Introduction to Aviation Industry",
-          credits: 3,
-        },
-        { code: "AM-103", name: "Computer Applications", credits: 3 },
-        { code: "AM-104", name: "Business Mathematics", credits: 3 },
-        { code: "AM-105", name: "Corporate Communication", credits: 3 },
-      ],
-    },
+        { code: "AM-101", name: "Advanced English I", credits: 3 },
+        { code: "AM-102", name: "Mathematics", credits: 3 },
+        { code: "AM-103", name: "Principles of Microeconomics", credits: 3 },
+        { code: "AM-104", name: "Introduction to Psychology", credits: 3 },
+        { code: "AM-105", name: "Society and Culture", credits: 3 },
+        { code: "AM-106", name: "Financial Accounting", credits: 3 },
+  ],
+}
+,
     {
       semester: "II",
       courses: [
-        {
-          code: "AM-201",
-          name: "Accounting and Management Decisions",
-          credits: 3,
-        },
-        { code: "AM-202", name: "Microeconomics", credits: 3 },
-        { code: "AM-203", name: "Human Resources Management", credits: 3 },
-        { code: "AM-204", name: "Airport Management", credits: 3 },
-        { code: "AM-205", name: "Aviation Safety and Security", credits: 3 },
+        { code: "AM-201", name: "Macroeconomics", credits: 3 },
+        { code: "AM-202", name: "Business Management", credits: 3 },
+        { code: "AM-203", name: "Corporate Communication", credits: 3 },
+        { code: "AM-204", name: "Business Statistics", credits: 3 },
+        { code: "AM-205", name: "Introduction to Aviation Industry", credits: 3 },
+        { code: "AM-206", name: "Airport Equipment and Facilities", credits: 3 },
       ],
-    },
+    }
+,
     {
       semester: "III",
       courses: [
-        { code: "AM-301", name: "Human Factor in Aviation", credits: 3 },
-        { code: "AM-302", name: "International Law", credits: 3 },
-        { code: "AM-303", name: "Macroeconomics", credits: 3 },
-        { code: "AM-304", name: "Business Research Methods", credits: 3 },
-        { code: "AM-305", name: "Business Statistics", credits: 3 },
+        { code: "AM-301", name: "Principles of Marketing", credits: 3 },
+        { code: "AM-302", name: "Ethics and Social Responsibility", credits: 3 },
+        { code: "AM-303", name: "Financial Management", credits: 3 },
+        { code: "AM-304", name: "Air Traffic Management", credits: 3 },
+        { code: "AM-305", name: "HRM and Human Factor in Aviation", credits: 3 },
+        { code: "AM-306", name: "Aircraft Maintenance Management", credits: 3 },
       ],
-    },
+    }
+,
     {
       semester: "IV",
       courses: [
-        { code: "AM-401", name: "Organizational Behavior", credits: 3 },
-        { code: "AM-402", name: "Entrepreneurship", credits: 3 },
-        { code: "AM-403", name: "Disaster Management in Aviation", credits: 3 },
-        {
-          code: "AM-404",
-          name: "Revenue Generation in Aviation Sector",
-          credits: 3,
-        },
-        {
-          code: "AM-405",
-          name: "Technological Trends in Aviation",
-          credits: 3,
-        },
+        { code: "AM-401", name: "Database Management", credits: 3 },
+        { code: "AM-402", name: "Research Methodology", credits: 3 },
+        { code: "AM-403", name: "Business Strategy", credits: 3 },
+        { code: "AM-404", name: "Aviation Safety and Security", credits: 3 },
+        { code: "AM-405", name: "Operational Research Applied to Air Transportation", credits: 3 },
+        { code: "AM-406", name: "Meteorology Services for Aviation", credits: 3 },
       ],
-    },
+    }
+,
     {
-      semester: "V",
-      courses: [
-        { code: "AM-501", name: "Air Traffic Control", credits: 3 },
-        { code: "AM-502", name: "Aircraft Maintenance Management", credits: 3 },
-      ],
-    },
-    {
+        semester: "V",
+        courses: [
+          // Core
+          { code: "AM-501 (Core)", name: "Aircraft Certification & Airworthiness", credits: 3 },
+          { code: "AM-502 (Core)", name: "Aviation Law and Regulation", credits: 3 },
+
+          // Elective (choose one)
+          { code: "AM-503 (Elective)", name: "Elective 1", credits: 3 },
+
+
+          // Specialization 1 - Aviation Financial Management
+          { code: "AM-506 (Specialization 1)", name: "Aviation Financial Management Management", credits: 3 },
+          
+
+          // Specialization 2 - Aviation Operations Management
+          { code: "AM-509 (Specialization 2)", name: "Aviation Operations Management", credits: 3 },
+          
+
+          // Specialization 3 - Aviation Sales and Marketing
+          { code: "AM-512 (Specialization 3)", name: "Aviation Sales and Marketing", credits: 3 },
+        ],
+      }
+
+,
+   {
       semester: "VI",
       courses: [
-        { code: "AM-601", name: "Strategic Management", credits: 3 },
-        { code: "AM-602", name: "Managerial Finance", credits: 3 },
+        // Core
+        { code: "AM-601 (Core)", name: "Project Management", credits: 3 },
+        { code: "AM-602 (Core)", name: "Disaster Management in Aviation", credits: 3 },
+        { code: "AM-603 (Core)", name: "Avionics System", credits: 3 },
+
+       // Specialization 1 - Aviation Financial Management
+          { code: "AM-506 (Specialization 1)", name: "Aviation Financial Management Management", credits: 3 },
+          
+
+          // Specialization 2 - Aviation Operations Management
+          { code: "AM-509 (Specialization 2)", name: "Aviation Operations Management", credits: 3 },
+          
+
+          // Specialization 3 - Aviation Sales and Marketing
+          { code: "AM-512 (Specialization 3)", name: "Aviation Sales and Marketing", credits: 3 },
       ],
-    },
+    }
+,
     {
       semester: "VII",
       courses: [
-        { code: "AM-701", name: "Project Management", credits: 3 },
-        {
-          code: "AM-702",
-          name: "Civil Aviation and Tourism Industry of Nepal",
-          credits: 3,
-        },
-        { code: "AM-705", name: "Open Sky Policy in Nepal", credits: 3 },
-        { code: "AM-703", name: "Industrial Experience Project", credits: 3 },
+        { code: "AM-701", name: "Project (Capstone Project)", credits: 6 },
       ],
     },
     {
       semester: "VIII",
       courses: [
-        { code: "AM-804", name: "Quantitative Techniques", credits: 3 },
-        { code: "AM-805", name: "The Airlines Business", credits: 3 },
-        { code: "AM-806", name: "Internship", credits: 6 },
+        { code: "AM-801", name: "Internship", credits: 6 },
+        
       ],
     },
   ];
@@ -104,36 +120,37 @@ export default function CurriculumPage() {
       name: "Aviation Financial Management",
       color: "from-[#0a4936] to-green-600",
       courses: [
-        "International Financial Reporting Standards",
-        "Taxation in Nepal",
-        "Aircraft Finance",
-        "Aviation Insurance",
-        "Aviation Economics and Forecasting",
-        "Investment Analysis and Portfolio Management",
+        "Financial Management and Incsurance in Aviation(Sem-V)",
+        "Investment Analysis and Portfolio Management(Sem-V)",
+        "Taxation and auditing(Sem-V)",
+        "Air Transport Economics(Sem VI)",
+        "Accounting For Managers(Sem VI)",
+        "Aircraft Leasing and Financing*(Sem VI)",
+        ,
       ],
     },
     {
       name: "Aviation Operations Management",
       color: "from-blue-600 to-blue-700",
       courses: [
-        "Logistics Management for Aviation",
-        "Production and Operations Management",
-        "Cargo Management",
-        "Information Management",
-        "Operations Research",
-        "Airport Equipment and Facility",
+        "Cargo & Supply Chain Management for Aviation (Sem V)",
+        "Airport Operation, Planning and Design (Sem V)",
+        "Ground handling and Ramp Management (Sem V)",
+        "Flight Mechanics (Sem VI)",
+        "Airline Scheduling and Onboard Crew Management (Sem VI)",
+        "Flight Operations (Sem VI)",
       ],
     },
     {
-      name: "Sales and Marketing",
+      name: "Aviation Sales and Marketing",
       color: "from-green-600 to-green-700",
       courses: [
-        "Airline Customer Service",
-        "Air Ticketing and Fare Construction",
-        "Airlines Advertising and Sales Promotion",
-        "Cabin Crew Management",
-        "Branding and Advertising",
-        "Digital Marketing",
+        "Airline Customer Service (Sem V)",
+        "Sales Management (Sem V)",
+        "Service Marketing (Sem V)",
+        "Air Ticketing and Fare Construction (Sem VI)",
+        "Branding and Advertising (Sem VI)",
+        "Digital Marketing (Sem VI)",
       ],
     },
   ];
@@ -264,24 +281,24 @@ export default function CurriculumPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-bold text-[#0a4936] mb-4">
-                  Elective I (Semester VII)
+                  Elective I (Semester V)
                 </h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>
-                    Meteorological Services for Aviation
+                    Helicopter Operations
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>
-                    Airline Schedule Planning
+                    Drone Regulations & Operations 
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-[#0a4936] rounded-full mr-3"></span>
-                    Transportation of Dangerous Goods
+                    Sustainable Aviation
                   </li>
                 </ul>
               </div>
-              <div>
+              {/* <div>
                 <h3 className="text-xl font-bold text-[#0a4936] mb-4">
                   Elective II (Semester VIII)
                 </h3>
@@ -299,7 +316,7 @@ export default function CurriculumPage() {
                     Global Business Environment
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
