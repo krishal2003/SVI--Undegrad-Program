@@ -14,7 +14,7 @@ export default function FacilitiesPage() {
     },
     {
       icon: BookOpen,
-      title: "Aviation Library",
+      title: "Library",
       description:
         "Specialized library with extensive collection of aviation management books, journals, research papers, and digital resources.",
       color: "from-blue-600 to-blue-700",
@@ -42,15 +42,15 @@ export default function FacilitiesPage() {
     },
     {
       icon: Car,
-      title: "Transportation",
-      description: "Convenient transportation facilities and parking areas for students and faculty members.",
+      title: "Parking",
+      description: "Convenient parking areas for students and faculty members.",
       color: "from-teal-600 to-teal-700",
     },
     {
       icon: Coffee,
       title: "Student Facilities",
       description:
-        "Cafeteria, recreation areas, and student lounges for comfortable campus life and social interaction.",
+        "Cafeteria and recreation areas for comfortable campus life and social interaction.",
       color: "from-red-600 to-red-700",
     },
     {
@@ -66,11 +66,12 @@ export default function FacilitiesPage() {
     {
       category: "Academic Infrastructure",
       items: [
-        "Minimum 8 well-equipped classrooms with modern teaching aids",
-        "Aviation management specialized library with 2000+ books",
-        "Computer laboratory with aviation software",
-        "Seminar halls for guest lectures and presentations",
+        "Well-equipped classrooms with modern teaching aids",
+        "Aviation management specialized library with numerous books and journals",
+        "Computer laboratory with aviation management software",
+        "Seminar halls for guest lectures, workshops, and presentations",
         "Faculty offices and administrative spaces",
+        "Dedicated study areas and group discussion rooms"
       ],
     },
     {
@@ -78,31 +79,35 @@ export default function FacilitiesPage() {
       items: [
         "High-speed internet connectivity throughout campus",
         "Audio-visual equipment in all classrooms",
-        "Flight simulation software and systems",
-        "Aviation management software packages",
-        "Digital learning management system",
+        "Aviation management software packages for hands-on learning",
+        "Digital learning management system for course materials and assignments",
+        "Computer labs with updated hardware and software",
+        "Online resources and databases for research and study"
       ],
     },
     {
       category: "Support Facilities",
       items: [
         "Student counseling and career guidance center",
-        "Medical facilities and first aid services",
-        "Cafeteria and dining facilities",
-        "Recreation and sports facilities",
-        "Transportation and parking facilities",
+        "Medical facilities with first aid and emergency support",
+        "Cafeteria and dining facilities offering healthy options",
+        "Recreation and sports facilities with outdoor fields",
+        "Transportation services and parking spaces",
+        "Student clubs, cultural events, and extracurricular activities"
       ],
     },
     {
       category: "Industry Partnerships",
       items: [
-        "Partnerships with airports for practical training",
-        "Collaboration with airlines for internship programs",
-        "Connections with aviation regulatory bodies",
-        "Industry expert guest lecture arrangements",
-        "Career placement and industry networking support",
+        "Partnerships with airports for practical training and site visits",
+        "Collaboration with airlines for internships and apprenticeships",
+        "Connections with aviation regulatory bodies and authorities",
+        "Industry expert guest lectures and seminars",
+        "Career placement and job networking support",
+        "Joint research and development projects with aviation companies"
       ],
     },
+
   ]
 
   return (
@@ -136,6 +141,8 @@ export default function FacilitiesPage() {
               program, ensuring students have access to modern learning environments and industry-standard resources.
             </p>
           </div>
+
+          
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {facilities.map((facility, index) => (
@@ -195,26 +202,19 @@ export default function FacilitiesPage() {
                 <div>
                   <h3 className="text-xl font-bold text-[#0a4936] mb-4">Learning Environment</h3>
                   <p className="mb-4">
-                    The campus provides a conducive learning environment with modern facilities that support both
-                    theoretical learning and practical application. Students have access to quiet study areas, group
-                    discussion rooms, and collaborative spaces.
+                    The campus offers a supportive and modern learning environment that balances theory with practical experience. Students can use well-equipped classrooms, quiet study zones, group discussion rooms, and collaborative spaces to enhance their learning.
                   </p>
                   <p>
-                    The aviation management program benefits from specialized facilities including flight simulation
-                    labs, aviation software, and industry-standard equipment that prepare students for real-world
-                    challenges.
+                    Specialized facilities for aviation management include flight simulation labs, aviation software, and up-to-date industry equipment, all designed to prepare students for the challenges of the aviation sector.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#0a4936] mb-4">Student Support Services</h3>
                   <p className="mb-4">
-                    Comprehensive student support services include academic counseling, career guidance, health
-                    services, and extracurricular activities. The campus fosters a vibrant community where students can
-                    develop both professionally and personally.
+                    Students benefit from a wide range of support services such as academic counseling, career guidance, medical and health facilities, and various extracurricular programs. The campus encourages a strong community spirit where students grow both professionally and personally.
                   </p>
                   <p>
-                    Regular industry visits, guest lectures, and networking events are organized to provide students
-                    with exposure to the aviation industry and career opportunities.
+                    To connect students with the industry, the program regularly arranges site visits to airports and airlines, guest lectures by industry experts, and networking events to open doors to career opportunities in aviation.
                   </p>
                 </div>
               </div>
@@ -233,16 +233,16 @@ export default function FacilitiesPage() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                  <h3 className="text-lg font-bold mb-3">Advanced Simulation Lab</h3>
-                  <p className="text-sm opacity-90">State-of-the-art flight and airport simulation facilities</p>
+                  <h3 className="text-lg font-bold mb-3">Global Partnerships</h3>
+                  <p className="text-sm opacity-90">Expanding collaborations with international aviation institutions for student exchanges, joint research, and global exposure.</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                  <h3 className="text-lg font-bold mb-3">Industry Training Center</h3>
-                  <p className="text-sm opacity-90">Dedicated center for practical aviation management training</p>
+                  <h3 className="text-lg font-bold mb-3">Digital Learning Platforms</h3>
+                  <p className="text-sm opacity-90">Introducing enhanced e-learning tools, virtual classrooms, and interactive modules to complement traditional teaching.</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                  <h3 className="text-lg font-bold mb-3">Research Facilities</h3>
-                  <p className="text-sm opacity-90">Enhanced research infrastructure for aviation studies</p>
+                  <h3 className="text-lg font-bold mb-3">Sustainability Initiatives</h3>
+                  <p className="text-sm opacity-90">Developing programs and facilities that focus on green aviation practices and sustainable airport operations.</p>
                 </div>
               </div>
             </div>
